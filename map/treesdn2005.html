@@ -40,11 +40,12 @@
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
           
-          <button onclick='location.href="../../../data/dictionary/treesdn2005.html"'>Tree Density per Square Mile 2005 in Census Block 2010 <strong>Data dictionary</strong></button>
+          <!-- <button onclick='location.href="../../../data/dictionary/treesdn2005.html"'>Tree Density per Square Mile 2005 in Census Block 2010 <strong>Data dictionary</strong></button> -->
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2005.csv&format=csv&q=SELECT bctcb2010,cbareasqmi FROM nycb2010_treesdata"'><strong>Export</strong> Tree Density per Square Mile 2005 in Census Block 2010 data as <strong>CSV</strong></button>
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2005&format=shp&q=SELECT the_geom,bctcb2010,cbareasqmi FROM nycb2010_treesdata"'><strong>Export</strong> Tree Density per Square Mile 2005 in Census Block 2010 data as <strong>Shapefile</strong></button>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2005.csv&format=csv&q=SELECT bctcb2010,treedensqmi2005 FROM nycb2010_treesdata"'><strong>Export</strong> Tree Density per Square Mile 2005 in Census Block 2010 data as <strong>CSV</strong></button>
+          <p></p>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2005&format=shp&q=SELECT the_geom,bctcb2010,treedensqmi2005 FROM nycb2010_treesdata"'><strong>Export</strong> Tree Density per Square Mile 2005 in Census Block 2010 data as <strong>Shapefile</strong></button>
        </div>
        <!-- ALL DATA PANEL IS OFF - SEE LEFTPANEL
        <div id='alldata'>
