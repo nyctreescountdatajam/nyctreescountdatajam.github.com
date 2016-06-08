@@ -1,0 +1,30 @@
+/** choropleth visualization */
+
+#nycb2010_treesdata{
+  polygon-fill: #EDF8FB;
+  polygon-opacity: 1;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 0;
+}
+#nycb2010_treesdata [ count1995 <= 300] {
+   polygon-fill: #005824;
+}
+#nycb2010_treesdata [ count1995 <= 100] {
+   polygon-fill: #238B45;
+}
+#nycb2010_treesdata [ count1995 <= 75] {
+   polygon-fill: #41AE76;
+}
+#nycb2010_treesdata [ count1995 <= 50] {
+   polygon-fill: #66C2A4;
+}
+#nycb2010_treesdata [ count1995 <= 30] {
+   polygon-fill: #CCECE6;
+}
+#nycb2010_treesdata [ count1995 <= 20] {
+   polygon-fill: #D7FAF4;
+}
+#nycb2010_treesdata [ count1995 <= 10] {
+   polygon-fill: #EDF8FB;
+}
