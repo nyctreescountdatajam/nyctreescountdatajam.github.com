@@ -19,7 +19,7 @@ html, body {
 .cartodb-legend-stack { 
 	position: absolute; 
 	left: 45px;  
-	width: 250px; 
+	width: 300px; 
 	top:5px; 
 	padding: 5px; 
 	z-index: 99; 
