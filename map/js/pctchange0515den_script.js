@@ -19,7 +19,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/ca8aced6-2dbd-11e6-bf76-0e5db1731f59/viz.json";
+      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/ec0f6d06-2a88-11e6-8d58-0ecfd53eb7d3/viz.json";
     
       var sublayers = [];
     
@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Percent Change in Tree Count Density <strong>1995 -> 2005</strong> per Square Mile in Census Block Layer On/Off": toggler
+        "Percent Change in Tree Count Density <strong>2005 -> 2015</strong> per Square Mile in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
