@@ -1,4 +1,9 @@
-/** choropleth visualization */
+/** choropleth visualization 
+
+Count Trees 2015 in Census Block
+<= 10
+> 100
+*/
 
 #nycb2010_treesdata{
   polygon-fill: #EDF8FB;

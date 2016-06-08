@@ -19,7 +19,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/501f4b3e-2a86-11e6-9a28-0ecd1babdde5/viz.json";
+      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31932ec1d/viz.json";
     
       var sublayers = [];
     
