@@ -5,7 +5,7 @@ var map;
       // initiate leaflet map
       map = new L.Map('map', { 
         center: [40.705,-74.00], 
-        zoom: 9,
+        zoom: 12,
         layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
