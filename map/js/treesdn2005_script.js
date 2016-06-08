@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Tree Density per Square Mile 2005 in Census Block 2010 Layer On/Off": toggler
+        "2005 Tree Density per Square Mile in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
