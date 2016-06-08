@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "<strong>2005</strong> Count Trees in Census Block Layer On/Off": toggler
+        "Count Trees <strong>2005</strong> in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
