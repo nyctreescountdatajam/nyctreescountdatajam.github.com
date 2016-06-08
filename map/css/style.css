@@ -23,7 +23,7 @@ html, body {
 	bottom:10px; 
 	padding: 5px; 
 	z-index: 99; 
-	height: 130;
+	/*height: 130;*/
 	/*bottom: auto;*/
 }
 #exports { 
