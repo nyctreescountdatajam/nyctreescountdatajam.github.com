@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "1995-2015 (20 years) Percent Change in Tree Density per Square Mile in Census Block Layer On/Off": toggler
+        "<strong>1995-2015</strong> (20 years) Percent Change in Tree Density per Square Mile in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
