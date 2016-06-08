@@ -28,7 +28,7 @@ html, body {
 }
 #exports { 
 	position: absolute; 
-	bottom: 5px; 
+	bottom: 1px; 
 	right: 8px; 
 	height: 100px; 
 	text-align: right;}   
