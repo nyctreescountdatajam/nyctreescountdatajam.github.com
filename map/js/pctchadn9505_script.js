@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Percent Change in Tree Density <strong>1995->2005</strong> per Square Mile in Census Block Layer On/Off": toggler
+        "Percent Change in Tree Density <strong>1995 -> 2005</strong> per Square Mile in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
