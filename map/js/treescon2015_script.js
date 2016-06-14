@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Street Tree Conditions 2015 Layer On/Off": toggler
+        "Street Tree Conditions 2015 - working on data export Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
