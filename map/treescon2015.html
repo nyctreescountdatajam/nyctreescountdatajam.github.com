@@ -13,7 +13,7 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
       <link rel="stylesheet" href="css/style.css">   <!-- LOCAL FILE -->
-      <script src="js/treesdn2015_script.js"></script>   <!-- LOCAL FILE -->
+      <script src="js/treescon2015_script.js"></script>   <!-- LOCAL FILE -->
     </head>
     
     <body onload="init()">
@@ -40,12 +40,12 @@
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
           
-          <!-- <button onclick='location.href="../../../data/dictionary/treesdn2015.html"'>Tree Count Density <strong>2015</strong> per Square Mile in Census Block <strong>Data dictionary</strong></button> -->
+          <!-- <button onclick='location.href="../../../data/dictionary/treescon2015.html"'>Street Tree Conditions 2015 - working on data export <strong>Data dictionary</strong></button> -->
           <p></p>
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2015.csv&format=csv&q=SELECT bctcb2010,treedensqmi2015 FROM nycb2010_treesdata"'>Export Tree Count Density <strong>2015</strong> per Square Mile in Census Block data as <strong>CSV</strong></button>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treescon2015.csv&format=csv&q=SELECT bctcb2010,count1995,count2005,count2015 FROM nycb2010_treesdata"'>Export Street Tree Conditions 2015 - working on data export data as <strong>CSV</strong></button>
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treesdn2015&format=shp&q=SELECT the_geom,bctcb2010,treedensqmi2015 FROM nycb2010_treesdata"'>Export Tree Count Density <strong>2015</strong> per Square Mile in Census Block data as <strong>Shapefile</strong></button>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treescon2015&format=shp&q=SELECT the_geom,bctcb2010,count1995,count2005,count2015 FROM nycb2010_treesdata"'>Export Street Tree Conditions 2015 - working on data export data as <strong>Shapefile</strong></button>
        </div>
        <!-- ALL DATA PANEL IS OFF - SEE LEFTPANEL
        <div id='alldata'>
