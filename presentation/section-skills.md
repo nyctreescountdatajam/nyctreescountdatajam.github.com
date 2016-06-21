@@ -1,38 +1,24 @@
 ## Other Projects and Research
-https://nygeog.github.io/maps/censustract2010locator/
-
-## Preferred Sklls
-
-
-
-#### Analysis Skills
+[Personal Website: nygeog.com](http://nygeog.github.io/)
+<!-- ## Preferred Sklls -->
+<!-- #### Analysis Skills
 * data mining
 * time-series analyses
 * machine learning algorithms
 * decision models
 * prediction and 
-* experimental research and statistical design. 
-
-
-
-
-#### Analytical Programming: Demonstrated expertise  
+* experimental research and statistical design. -->
+<!-- #### Analytical Programming: Demonstrated expertise  
 * statistical,
 * analytical and 
-* data visualization software,
-
-
-
-#### Especially with
+* data visualization software,-->
+<!-- #### Especially with
 * ArcGIS, 
 * SQL tools, 
 * Python, 
 * R and 
-* d3.js. 
-
-
-
-#### Close with link to Resume, Website, etc. 
+* d3.js. -->
+<!-- #### Close with link to Resume, Website, etc. -->
 
 
 
@@ -69,3 +55,8 @@ https://nygeog.github.io/maps/censustract2010locator/
 #### Transparency?
 * Require (?) all code (without PII or sensitive data) to be posted to agency GitHub
 	* RE: [Chris Whong at NYC Planning](https://github.com/NYCPlanning)  
+
+
+
+# Thanks!
+<img data-src="img/parks_logo.png" alt="parks logo" width="15%">

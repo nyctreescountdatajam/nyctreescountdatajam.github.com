@@ -18,6 +18,14 @@
 
 
 
+<iframe width="100%" height="520" frameborder="0" src="https://nygeog.cartodb.com/viz/2c53bb20-373a-11e6-b8d2-0e5db1731f59/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+
+<iframe width="100%" height="520" frameborder="0" src="https://nygeog.cartodb.com/viz/855a44c8-3749-11e6-9875-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+
 #### Machine Learning
 ["Machine learning is a method of data analysis that automates analytical model building. Using algorithms that iteratively learn from data, machine learning allows computers to find hidden insights without being explicitly programmed where to look."](http://www.sas.com/en_id/insights/analytics/machine-learning.html) ~ SAS website
 
@@ -46,8 +54,29 @@
 
 
 
-<iframe src="http://github.com/nyctreescountdatajam/nyctreescountdatajam_ml/blob/master/01-clean-and-split-data-train-test.py" style="width:100%; height:600px;" frameborder="0"></iframe> 
-
-
-
 ### [Code for Machine Learning for NYC Street Trees Census: Predicting "Poor" health Trees](https://github.com/nyctreescountdatajam/nyctreescountdatajam_ml)
+
+
+
+#### Ensemble Method used:
+[sklearn.ensemble.RandomForestClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+
+
+
+#### Model and Cross Validation
+![](img/02-model.png)
+
+
+
+#### 95.51% Accuracy in predicting "Poor" tree health
+![](img/03-check.png)
+
+
+
+#### Feature Importances
+* Can identify important features for prediction
+* However, would need to revisit One-Hot encoding so identify feature columns would be more intuitive (readable). 
+
+
+
+## [NYC Parks Data Jam](http://nyctreescountdatajam.github.io/)
