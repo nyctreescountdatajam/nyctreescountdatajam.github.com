@@ -27,7 +27,17 @@
 
 
 #### Machine Learning
-["Machine learning is a method of data analysis that automates analytical model building. Using algorithms that iteratively learn from data, machine learning allows computers to find hidden insights without being explicitly programmed where to look."](http://www.sas.com/en_id/insights/analytics/machine-learning.html) ~ SAS website
+["Machine learning is a method of data analysis that automates analytical model building..."](http://www.sas.com/en_id/insights/analytics/machine-learning.html) 
+
+
+
+#### Machine Learning
+["... Using algorithms that iteratively learn from data, ..."](http://www.sas.com/en_id/insights/analytics/machine-learning.html) 
+
+
+
+#### Machine Learning
+["... machine learning allows computers to find hidden insights without being explicitly programmed where to look."](http://www.sas.com/en_id/insights/analytics/machine-learning.html) ~ SAS website
 
 
 
@@ -55,6 +65,7 @@
 
 
 ### [Code for Machine Learning for NYC Street Trees Census: Predicting "Poor" health Trees](https://github.com/nyctreescountdatajam/nyctreescountdatajam_ml)
+_click_
 
 
 
@@ -80,3 +91,4 @@
 
 
 ## [NYC Parks Data Jam](http://nyctreescountdatajam.github.io/)
+_click_
