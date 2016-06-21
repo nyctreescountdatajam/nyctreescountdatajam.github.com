@@ -13,7 +13,7 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
       <link rel="stylesheet" href="css/style.css">   <!-- LOCAL FILE -->
-      <script src="js/pctchange9515den_tree_million_script.js"></script>   <!-- LOCAL FILE -->
+      <script src="js/treespor2015_script.js"></script>   <!-- LOCAL FILE -->
     </head>
     
     <body onload="init()">
@@ -40,12 +40,12 @@
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
           
-          <!-- <button onclick='location.href="../../../data/dictionary/pctchange9515den_tree_million.html"'>Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts <strong>Data dictionary</strong></button> -->
+          <!-- <button onclick='location.href="../../../data/dictionary/treespor2015.html"'>Street Tree Conditions 2015 Emp. "Poor" - working on data export <strong>Data dictionary</strong></button> -->
           <p></p>
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_pctchange9515den_tree_million.csv&format=csv&q=SELECT bctcb2010,count1995,count2015,pctchange9515den FROM nycb2010_treesdata"'>Export Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts data as <strong>CSV</strong></button>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treespor2015.csv&format=csv&q=SELECT bctcb2010,count1995,count2005,count2015 FROM nycb2010_treesdata"'>Export Street Tree Conditions 2015 Emp. "Poor" - working on data export data as <strong>CSV</strong></button>
           <p></p>
-          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_pctchange9515den_tree_million&format=shp&q=SELECT the_geom,bctcb2010,count1995,count2015,pctchange9515den FROM nycb2010_treesdata"'>Export Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts data as <strong>Shapefile</strong></button>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_treespor2015&format=shp&q=SELECT the_geom,bctcb2010,count1995,count2005,count2015 FROM nycb2010_treesdata"'>Export Street Tree Conditions 2015 Emp. "Poor" - working on data export data as <strong>Shapefile</strong></button>
        </div>
        <!-- ALL DATA PANEL IS OFF - SEE LEFTPANEL
        <div id='alldata'>

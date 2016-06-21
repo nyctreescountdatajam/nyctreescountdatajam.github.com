@@ -19,7 +19,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/855a44c8-3749-11e6-9875-0e787de82d45/viz.json";
+      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/55c4d968-3243-11e6-8f80-0ecfd53eb7d3/viz.json";
     
       var sublayers = [];
     
@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Street Tree Conditions 2015 "Poor" Hex Layer On/Off": toggler
+        "Street Tree Conditions 2015 - working on data export Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);
