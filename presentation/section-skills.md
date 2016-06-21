@@ -35,14 +35,6 @@
 
 
 
-#### Technological Autonomy
-* Administrative rights to own hardware
-	* Trying to convince traditional IT why sklearn needs to updated,
-	* or why Python paths have been corrected is HARD!
-	* ... and a waste of taxpayer's time. 
-
-
-
 #### Budget? 
 * AWS for data/applications
 	* API-like wrappers
