@@ -1,0 +1,28 @@
+/** choropleth visualization 
+Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts
+Decrease over 100%
+Increase over 100%
+*/
+
+#nycb2010_treesdata{
+  polygon-fill: #C1373C;
+  polygon-opacity: 0.8;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 0;
+}
+#nycb2010_treesdata [ pctchange9515den <= 100] {
+   polygon-fill: #136400;
+}
+#nycb2010_treesdata [ pctchange9515den <= 50] {
+   polygon-fill: #229A00;
+}
+#nycb2010_treesdata [ pctchange9515den = 0] {
+   polygon-fill: #FFFFFF;
+}
+#nycb2010_treesdata [ pctchange9515den <= -50] {
+   polygon-fill: #CC4E52;
+}
+#nycb2010_treesdata [ pctchange9515den <= -100] {
+   polygon-fill: #C1373C;
+}

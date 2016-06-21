@@ -5,7 +5,7 @@ var map;
       // initiate leaflet map
       map = new L.Map('map', { 
         center: [40.705,-74.00], 
-        zoom: 11,
+        zoom: 12,
         layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
@@ -14,12 +14,12 @@ var map;
       //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       //    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       //}).addTo(map);
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         }).addTo(map);
 
     
-      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/5be136a0-2a89-11e6-8388-0e5db1731f59/viz.json";
+      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/f5811e84-2dbc-11e6-9998-0ecfd53eb7d3/viz.json";
     
       var sublayers = [];
     
@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Tree Density per Square Mile 2015 in Census Block 2010 Layer On/Off": toggler
+        "Tree Count Density <strong>2015</strong> per Square Mile in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);

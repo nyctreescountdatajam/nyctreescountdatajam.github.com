@@ -5,7 +5,7 @@ var map;
       // initiate leaflet map
       map = new L.Map('map', { 
         center: [40.705,-74.00], 
-        zoom: 11,
+        zoom: 12,
         layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
@@ -14,12 +14,12 @@ var map;
       //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       //    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       //}).addTo(map);
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         }).addTo(map);
 
     
-      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/8e0979c8-2a87-11e6-a159-0e3ff518bd15/viz.json";
+      var layerUrl = "https://nygeog.cartodb.com/api/v2/viz/f4d493dc-2dba-11e6-96db-0e31c9be1b51/viz.json";
     
       var sublayers = [];
     
@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Count Trees 2005 in Census Block 2010 Layer On/Off": toggler
+        "Count Trees <strong>2005</strong> in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);

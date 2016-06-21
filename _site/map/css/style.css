@@ -5,7 +5,7 @@ html, body {
 	margin: 0;}
 #leftpanel{
     position: absolute; 
-    top: 136px; 
+    top: 10px; 
     left: 45px; 
     width: 180pt; 
     height: 0pt; 
@@ -18,17 +18,17 @@ html, body {
 	background: white;}
 .cartodb-legend-stack { 
 	position: absolute; 
-	left: 45px;  
-	width: 250px; 
-	top:5px; 
+	left: 5px;  
+	width: 350px; 
+	/*bottom:10px; */
 	padding: 5px; 
 	z-index: 99; 
-	height: 130;
-	/*bottom: auto;*/
+	/*height: 130;*/
+	bottom: auto;
 }
 #exports { 
 	position: absolute; 
-	bottom: 20px; 
+	bottom: 1px; 
 	right: 8px; 
 	height: 100px; 
 	text-align: right;}   

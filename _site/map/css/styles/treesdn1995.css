@@ -1,0 +1,34 @@
+/** choropleth visualization 
+Tree Count Density 1995 per Square Mile in Census Block
+<= 500 trees per sq. mile
+> 5,000
+*/
+
+#nycb2010_treesdata{
+  polygon-fill: #EDF8FB;
+  polygon-opacity: 0.8;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 0;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 1000000] {
+   polygon-fill: #005824;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 5000] {
+   polygon-fill: #238B45;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 3000] {
+   polygon-fill: #41AE76;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 2000] {
+   polygon-fill: #66C2A4;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 1500] {
+   polygon-fill: #CCECE6;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 1000] {
+   polygon-fill: #D7FAF4;
+}
+#nycb2010_treesdata [ treedensqmi1995 <= 500] {
+   polygon-fill: #EDF8FB;
+}

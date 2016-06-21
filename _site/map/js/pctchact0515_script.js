@@ -14,7 +14,7 @@ var map;
       //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       //    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       //}).addTo(map);
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         }).addTo(map);
 
@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Percent Change in Count Trees 2005-2015 in Census Block 2010 Layer On/Off": toggler
+        "Percent Change in Count Trees <strong>2005 -> 2015</strong> in Census Block Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);

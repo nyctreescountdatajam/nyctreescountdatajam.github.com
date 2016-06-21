@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Daniel M. Sheehan Data Science for Parks</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h4>Daniel M. Sheehan's</h4>
+					<h2>Presentation of Data Science Project Recently Completed</h2>
+					
+					<p><a href='https://www.nycgovparks.org/sub_opportunities/employment/pdf/2016/may/Data_Scientist__28City_Research_Scientist_III_29_LI-POST.pdf' target='_blank'>for Data Scientist Role</a></p>
+					<img data-src="img/parks_logo.png" alt="gps map" width="15%">
+				</section>
+
+				<section data-markdown="section-1.md"  
+         				data-separator="^\n\n\n"  
+         				data-separator-vertical="^\n\n"  
+         				data-separator-notes="^Note:"  
+         				data-charset="iso-8859-15">
+				</section>
+
+				<section data-markdown="section-skills.md"  
+         				data-separator="^\n\n\n"  
+         				data-separator-vertical="^\n\n"  
+         				data-separator-notes="^Note:"  
+         				data-charset="iso-8859-15">
+				</section>
+
+				<section data-background="#dddddd"> 
+					<p>Use of global positioning system (GPS) technology has become a standard method of data collection in geographical epidemiology and public health studies.</p>
+				</section>
+
+				<!-- Machine Learning -->
+				<section> 
+					<p>Supervised Machine Learning</p>
+					<a href='http://www.astroml.org/sklearn_tutorial/_images/plot_ML_flow_chart_1.png' target='_blank'>
+					<img data-src="http://www.astroml.org/sklearn_tutorial/_images/plot_ML_flow_chart_1.png" alt="gps map" width="75%"></a>
+				</section>
+
+				<section> 
+					<h2>Multipath Error</h2>
+					<img data-src="img/errordiagram.jpg" alt="error diagram">
+				</section>
+
+				<section> 
+					<p>Although the error associated with these split second delays may seem negligible, the multipath phenomena can substantially impact positional accuracy and tracking measurements.</p>
+				</section>
+				<section  > 
+					<img data-src="img/taxi.jpg" alt="taxi" height='40%' width='40%'>
+					<p class="fragment highlight-blue">In order to evaluate the associations between urban density and GPS positional accuracy we used data from the New York City (NYC) Taxi and Limousine Commission containing information on the approximately 175 million NYC yellowcab taxi trips that occurred in 2013.</p>
+					
+				</section>
+
+				<section> 
+					<p>We hypothesized that higher building density would be positively associated with errors in accuracy.</p>
+				</section>
+
+				<!-- DANNY'S SECTION -->
+
+				<section data-background="#dddddd"> 
+					<p>My research group, <a href='http://beh.columbia.edu/' target='_blank'>the Built Environment and Health Project</a> has been using and seeing GPS and accelerometry data emerging in many health-related research studies.</p>
+				</section>
+
+				<section> 
+					<p>We've noticed a lot of error in areas with high building density. So we've been sending students out on structured walks to better assess how the built environment influences GPS signal.</p>
+				</section>
+
+				<section> 
+					<p>In two slides, we'll see two walks down two different streets (one with low and one with high built density) in NYC (Bronx and Midtown Manhattan).</p>
+				</section>				
+
+				<section> 
+					<p>Two students walked together each carrying two <a href='http://usglobalsat.com/p-25-dg-100-gpsdata-logger.aspx' target='_blank'>DG-100 GPS</a> devices and the <a href='http://runkeeper.com/' target='_blank'>RunKeeper</a> app on their smartphones.</p>
+
+					<img data-src="img/dg100.jpg" alt="gps device">
+				</section>
+
+				<section> 
+					<img data-src="img/gps_map_v02.png" alt="gps map">
+				</section>
+
+				<section> 
+					<p>If researchers were assessing walking or traveled distance by using the raw un-processed GPS data they could potentially overestimate distance traveled in areas of high multipath error.</p>
+				</section>	
+
+				
+				<section> 
+					<p>The Taxi pickup and dropoff GPS data appeared to have the same error.</p>
+				</section>
+
+				<section> 
+					<p>So it seemed worthwhile and exciting to investigate it and potentially our REDS group's analysis to guide further research.</p>
+				</section>
+
+				<section> 
+					<p><small>A map of all dropoff and pickup GPS points in 2013 (starts of trips in blue and the ends in orange on this map:) <a href='https://www.mapbox.com/blog/nyc-taxi/' target='_blank'>New York City taxi trips - Eric Fisher, Mapbox</a>. Note points in water and over where buildings are.</small></p>
+					<iframe width="100%" height="500px" frameBorder="0" src="https://a.tiles.mapbox.com/v3/enf.ij1c2o4h.html?secure"></iframe>
+				</section>
+
+				<section>
+					<h4>Taxi Pickups and Dropoffs by Census Block</h4>
+					<iframe width='100%' height='525' frameborder='0' src='https://dms2203.cartodb.com/viz/7631a2b4-ed1e-11e4-8d21-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> 
+					<p><small><a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/03-csv-xy-intersect.ipynb' target='_blank'>iPython notebook to intersect the Census Blocks and Taxi Pickups and Dropoffs</a>, <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/04-ogr-shp-to-csv.ipynb' target='_blank'>shapefile to csv (GDAL/OGR)</a>, <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/05-combine-tables.ipynb' target='_blank'>combine tables </a>, and <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/06-concat-master.ipynb' target='_blank'> concat master table.</a>
+					</small></p>
+				</section>
+
+				<section> 
+					<p>We hypothesized that higher building density (<strong>Distributed Building Height</strong>) would be positively associated with errors in accuracy.</p>
+				</section>
+
+				<section>
+					<h1>Modeling Buildings...</h1>
+				</section>
+
+				<section>
+					<h2>Data</h2>
+					<ul>
+						<li><a href='https://data.cityofnewyork.us/Housing-Development/Building-Footprints/tb92-6tj8' target='_blank'>NYC Building Footprints</a> 2013-09 release with Roof Height and Ground Elevation - these attributes are no longer available via Open Data - that's why its important to archive data.</li>
+					  	<li><a href='http://www.nyc.gov/html/dcp/download/bytes/nycb2010_15a.zip' target='_blank'>NYC Census Blocks 2010</a> (I used v. 11a)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Assumptions and Limitations</h2>
+					<ul>
+						<li>All data used is publicly available.</li>
+					  	<li>Buildings are extruded from the ground elevation to maximum height - building setbacks are not modeled with publicly available data.</li>
+					</ul>
+				</section>
+
+				<section> 
+					<h4>Distributed Building Height MODEL</h4>
+					<small><pre><code>convert -delay 200 -loop 0 img/png/*.png img/gif/dist_bldg_hght_ani.gif #imagemagick-png to gif code</code></pre></small>
+					<img data-src="img/dist_bldg_hght_ani.gif" alt="dist_bldg_hght_ani" height='75%' width='75%'>
+				</section>
+				<!-- Distributed Building Height -->
+				<section> 
+					<h4>Distributed Building Height</h4>
+					<iframe width='100%' height='525' frameborder='0' src='https://dms2203.cartodb.com/viz/ac88b602-ed20-11e4-aad3-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					<p><small><a href='https://github.com/nygeog/taxi/tree/master/tasks/201406_building_bulk_density' target='_blank'>Calculating Distributed Building Height (referred to as building bulk density in code).</a></small></p>
+				</section>
+
+
+				<section>
+					<h1>Modeling GPS Error...</h1>
+				</section>
+
+				<section>
+					<h2>Data</h2>
+					<ul>
+						<li><a href='https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd' target='_blank'>NYC Roadbed Data</a></li>
+					  	<li><a href='http://chriswhong.com/open-data/foil_nyc_taxi/' target='_blank'>2013 Taxi Data: Trip and Fare Data</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Assumptions and Limitations</h2>
+					<ul>
+						<li>We don't know the 'truth' of where a Taxi Pickup/Dropoff occurred.</li>
+						<li>Assume that a Taxi Pickup/Dropoff that occurred on Roadbed was valid, meaning a pickup on 42nd Street didn't actually occur on 43rd Street.</li>
+					  	<li>Taxi's can only pick up on the Roadbed data layer.</li>
+					</ul>
+				</section>
+
+				<section> 
+					<h4>Taxi Pickups/Dropoffs Roadbed Diagram</h4>
+					<img data-src="img/roadbed_diagram.jpg" alt="roadbed diagram" width='50%' height='50%' >
+				</section>
+
+				<section> 
+					<h4>Taxi Pickup/Dropoffs 2013/01/01 distance to roadbed </h4>
+					<img data-src="img/midtown_20130101.png" alt="roadbed diagram" width='60%' height='60%' >
+					<img data-src="img/midtown_20130101_legend.png" alt="roadbed diagram" width='25%' height='25%'>
+				</section>
+
+				<!-- Average Distance to Roadbed -->
+				<section> 
+					<h4>Average Distance to Roadbed</h4>
+					<iframe width='100%' height='525' frameborder='0' src='https://dms2203.cartodb.com/viz/717d07aa-ed22-11e4-95d1-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					<p><small><a href='https://github.com/nygeog/taxi/tree/master/tasks/201409_roadbed_centerline' target='_blank'>Calculating Distance (<code>arcpy.GenerateNearTable_analysis</code>) from Pickup/Dropoffs to Nearest Roadbed feature</a>, <a href='https://github.com/nygeog/taxi/tree/master/tasks/201504_stat4701' target='_blank'>OGR-GDAL and Pandas IPython Notebooks for Data Munging.</a></small></p>
+				</section>
+
+				<!-- Standard Deviation Distance to Roadbed -->
+<!-- 				<section>
+					<iframe width='100%' height='550' frameborder='0' src='https://dms2203.cartodb.com/viz/c0aa7254-ed22-11e4-8203-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</section> -->
+
+				<!-- Percent Block Covered with Building Footprint -->
+				<section> 
+					<h4>Percent Block Covered with Building Footprint</h4>
+					<iframe width='100%' height='525' frameborder='0' src='https://dms2203.cartodb.com/viz/afdd200a-ed5b-11e4-8727-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					<p><small><a href='https://github.com/nygeog/taxi/tree/master/tasks/201504_stat4701' target='_blank'>OGR-GDAL and Pandas IPython Notebooks includes creating Percent Block Covered with Building Footprint variable.</a></small></p>
+				</section>
+
+				<section>
+					<h2>The Analytical Datasets</h2>
+					<p><i>Summary Statistics for Census Blocks</i></p>
+					<p>nycb2010_taxi_2013_stats_bldg_cnt_pctcbbldg.csv (4 MB)</p>
+
+					<p><i>Distance to Roadbed data for all 2013 Taxi Pickups/Dropoffs</i></p>
+					<p>taxi_2013.csv (18.56 GB - OSX-journaled)</p>
+				</section>
+
+				<section>
+					<h4>Hosted them on Google BigQuery</h4>
+					<img data-src="img/bigquery_logo.png" alt="bigquery logo">
+					<img data-src="img/bigquery_console.png" alt="bigquery console">
+				</section>
+
+				<section>
+					<h2>Variables for all 2013 Taxi Pickups/Dropoffs</h2>
+					<small><ul>
+						<li>tuid - Unique Taxi trip ID.</li>
+						<li>dist_roadbed - distance to nearest roadbed, 0 is in roadbed.</li>
+						<li>geoid - Unique Census Block ID.</li>
+						<li>dist_bldg_hght - Distributed building height (meters), our predictor for causing error.</li>
+						<li>type - p: pickup, d: dropoff location</li>
+					</ul></small>
+				</section>
+				<section> 
+					<img data-src="img/bigquery_results_taxi.png" alt="bigquery results taxi">
+				</section>
+
+				<section>
+					<h2>Variables for Census Blocks</h2>
+					<small><ul>
+						<li>geoid - Unique Census Block ID</li>
+						<li>avgbrdist - Average Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li>
+						<li>medbrdist - Median Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>stdbrdist - Standard Deviation of Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>count - Count taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>areasqft - Area of Census Block in square feet.</li> 
+						<li>countbldg - Count of Buildings in Census Block.</li>  
+						<li>bldgareaft - Building footprint area in square feet in Census Block.</li>
+						<li>pctcbbldg - Percent Census Block covered by building footprint.</li>
+						<li>dist_bldg_hght - Distributed building height (meters), our predictor for causing error.</li>
+					</ul></small>
+				</section>
+				<section> 
+					<img data-src="img/bigquery_results_blocks.png" alt="bigquery results blocks">
+				</section>
+				<section data-background="#dddddd"> 
+					<h1>The Statistical Analysis</h1>
+				</section>
+
+				<!-- EMILIE's SECTION -->
+
+				<section data-markdown="section-1.md"  
+         				data-separator="^\n\n\n"  
+         				data-separator-vertical="^\n\n"  
+         				data-separator-notes="^Note:"  
+         				data-charset="iso-8859-15">
+				</section>
+
+				
+
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

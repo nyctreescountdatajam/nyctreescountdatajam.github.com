@@ -1,0 +1,56 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
+      <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+      <link rel="stylesheet" href="css/style.css">   <!-- LOCAL FILE -->
+      <script src="js/pctchange9515den_tree_million_script.js"></script>   <!-- LOCAL FILE -->
+    </head>
+    
+    <body onload="init()">
+      <div id='map'></div>
+      <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
+      <div id="leftpanel">
+
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="../../../" class="button all">Home</a>
+            </button>
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="https://nygeog.cartodb.com/tables/nycb2010_treesdata/public" class="button all">All Data</a>
+            </button>
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="" class="button all">Reset</a>
+            </button>
+    
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Street Tree Census 1995-2015 Counts & Density by Census Block
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <strong> Count Trees</strong><li role="presentation"><a href="cttrees1995.html" id="cttrees1995" class="button cttrees1995">Count Trees <strong>1995</strong> in Census Block</a></li><li role="presentation"><a href="cttrees2005.html" id="cttrees2005" class="button cttrees2005">Count Trees <strong>2005</strong> in Census Block</a></li><li role="presentation"><a href="cttrees2015.html" id="cttrees2015" class="button cttrees2015">Count Trees <strong>2015</strong> in Census Block</a></li><strong> Tree Density (trees per square mile)</strong><li role="presentation"><a href="treesdn1995.html" id="treesdn1995" class="button treesdn1995">Tree Count Density <strong>1995</strong> per Square Mile in Census Block</a></li><li role="presentation"><a href="treesdn2005.html" id="treesdn2005" class="button treesdn2005">Tree Count Density <strong>2005</strong> per Square Mile in Census Block</a></li><li role="presentation"><a href="treesdn2015.html" id="treesdn2015" class="button treesdn2015">Tree Count Density <strong>2015</strong> per Square Mile in Census Block</a></li><strong> Percent Change in Tree Density (trees per square mile)</strong><li role="presentation"><a href="pctchange9505den.html" id="pctchange9505den" class="button pctchange9505den">Percent Change in Tree Count Density <strong>1995 -> 2005</strong> per Square Mile in Census Block</a></li><li role="presentation"><a href="pctchange0515den.html" id="pctchange0515den" class="button pctchange0515den">Percent Change in Tree Count Density <strong>2005 -> 2015</strong> per Square Mile in Census Block</a></li><li role="presentation"><a href="pctchange9515den.html" id="pctchange9515den" class="button pctchange9515den">Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block</a></li><strong> Percent Change in Tree Density (trees per square mile) with Counts of Trees</strong><li role="presentation"><a href="pctchange9515den_tree_million.html" id="pctchange9515den_tree_million" class="button pctchange9515den_tree_million">Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
+      <div id='exports'>
+          
+          <!-- <button onclick='location.href="../../../data/dictionary/pctchange9515den_tree_million.html"'>Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts <strong>Data dictionary</strong></button> -->
+          <p></p>
+          <p></p>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_pctchange9515den_tree_million.csv&format=csv&q=SELECT bctcb2010,count1995,count2015,pctchange9515den FROM nycb2010_treesdata"'>Export Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts data as <strong>CSV</strong></button>
+          <p></p>
+          <button onclick='location.href="https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_pctchange9515den_tree_million&format=shp&q=SELECT the_geom,bctcb2010,count1995,count2015,pctchange9515den FROM nycb2010_treesdata"'>Export Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts data as <strong>Shapefile</strong></button>
+       </div>
+       <!-- ALL DATA PANEL IS OFF - SEE LEFTPANEL
+       <div id='alldata'>
+          <p></p>
+          <button onclick='location.href="../../../data/download.html"'>Download master data</button>
+       </div> -->
+    </body>
+    </html>
